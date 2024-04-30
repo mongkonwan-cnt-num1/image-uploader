@@ -33,6 +33,8 @@ export default function ImageUploadPage() {
     setSelectedImage(undefined);
   };
 
+  const none = () => { console.info("TODO content") }
+
   if (isLoading) {
     return <LoadingButton />;
   } else
@@ -64,10 +66,10 @@ export default function ImageUploadPage() {
 			<Button onClick={removeSelectedImage}>Remove This Image</Button>
 			</div>
 			<div>
-			<Button onClick={removeSelectedImage}>Download</Button>
+			<Button color="primary" onClick={none}>Download</Button>
 			</div>
 			<div>
-			<Button onClick={removeSelectedImage}>Share</Button>
+			<Button color="primary" onClick={none}>Share</Button>
 			</div>
     
           </div>
